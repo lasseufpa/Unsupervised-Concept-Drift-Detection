@@ -275,6 +275,26 @@ These are **alarm counts**, not measures of detection accuracy or confirmed drif
 
 The input measurements are **traffic rates (Mbps)** rather than traffic volumes. Weekly seasonal differencing is computed within continuous fragments to avoid treating timestamp gaps as transitions. Each fragment requires one week of reference history before seasonally differenced values become available. The GÉANT record `20050527-1745` is flagged as suspect in the SNDlib `geant-readme.txt` and treated as invalid during preprocessing. The paper's detector experiments use the **non-logarithmic** seasonal difference; a logarithmic plotting axis is a visualization choice and should not be confused with a log transform of input data.
 
+## References
+
+The following publications provide the methodological background for fully unsupervised concept drift detection and describe the network traffic datasets used in this study.
+
+**[1] A benchmark and survey of fully unsupervised concept drift detectors on real-world data streams**
+
+D. Lukats, O. Zielinski, A. Hahn, and F. Stahl, "A benchmark and survey of fully unsupervised concept drift detectors on real-world data streams," *International Journal of Data Science and Analytics*, vol. 19, pp. 1–31, 2025.
+
+https://doi.org/10.1007/s41060-024-00620-y
+
+**[2] Abilene Dataset**
+
+Y. Zhang, M. Roughan, N. Duffield, and A. Greenberg, "Fast accurate computation of large-scale IP traffic matrices from link loads," *ACM SIGMETRICS Performance Evaluation Review*, 2005.
+
+**[3] GÉANT Dataset**
+
+S. Uhlig, B. Quoitin, J. Lepropre, and S. Balon, "Providing public intradomain traffic matrices to the research community," *ACM SIGCOMM Computer Communication Review*, vol. 36, no. 1, pp. 83–86, 2006.
+
+---
+
 ## Citation and acknowledgments
 
 If you use the materials, please cite the accompanying study, *Unsupervised Concept Drift Detection in Network Traffic Through Detector Consensus*, together with the original dataset publications. Add the final article DOI and bibliography entry when available.
